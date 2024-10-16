@@ -3,7 +3,7 @@ import pyodbc
 from google.cloud import pubsub_v1
 
 
-GOOGLE_APPLICATION_CREDENTIALS_PATH = "E:\strategic-reef-435523-j1-b63447c13134.json"  # Path to your service account JSON file
+GOOGLE_APPLICATION_CREDENTIALS_PATH = "E:\strategic-ref-435523-j2-b63447c14314.json"  # Replace with your json file of service account
 
 # Set the environment variable for Google Application Credentials
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = GOOGLE_APPLICATION_CREDENTIALS_PATH
@@ -11,10 +11,10 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = GOOGLE_APPLICATION_CREDENTIALS_PA
 # Database connection function
 def connect_db():
     # Database connection details
-    server = '34.42.71.28'  # Replace with your instance public IP
+    server = ''  # Replace with your instance public IP of database in GCP
     database = 'myappdb'  # Replace with your database name
     username = 'myuser'  # Get username from environment variable
-    password = 'Shravya123'  # Get password from environment variable
+    password = ''  # Replace with your password
     driver = '{ODBC Driver 17 for SQL Server}'  # ODBC driver
 
     connection_string = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}'
