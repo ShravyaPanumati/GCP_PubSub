@@ -1,12 +1,19 @@
 Google Cloud Pub/Sub is a fully-managed real-time messaging service that allows you to send and receive messages between independent applications. It is part of the Google Cloud Platform (GCP) and is designed to provide reliable, many-to-many asynchronous messaging between applications.
+
 Core concepts in Pub/Sub are:
+
 Publisher: An application that sends messages to a topic.
+
 Subscriber: An application that receives messages from a subscription.
+
 Topic: A named resource to which messages are sent by publishers.
+
 Subscription: A named resource that represents the stream of messages from a specific topic. Subscribers receive messages from this subscription.
 
 The Workflow of Pub/Sub is as follows:
+
 Publish Messages: A publisher sends messages to a specified topic.
+
 Receive Messages: Subscribers pull messages from a subscription attached to that topic.
 
 message_generator.py is the python code file which generates the random messages. In this case, I had used random quotes i.e.., publishing messages.
