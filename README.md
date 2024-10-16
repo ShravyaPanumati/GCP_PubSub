@@ -10,6 +10,7 @@ Topic: A named resource to which messages are sent by publishers.
 
 Subscription: A named resource that represents the stream of messages from a specific topic. Subscribers receive messages from this subscription.
 
+
 The Workflow of Pub/Sub is as follows:
 
 Publish Messages: A publisher sends messages to a specified topic.
