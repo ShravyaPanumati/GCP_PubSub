@@ -3,13 +3,13 @@ import random
 import time
 from google.cloud import pubsub_v1
 
-GOOGLE_APPLICATION_CREDENTIALS_PATH = "E:\strategic-reef-435523-j1-b63447c13134.json"  # Path to your service account JSON file
+GOOGLE_APPLICATION_CREDENTIALS_PATH = "E:\strategic-reef-435523-j2-b63447c14314.json"  # Path to your service account JSON file
 
 # Set the environment variable for Google Application Credentials
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = GOOGLE_APPLICATION_CREDENTIALS_PATH
 
 # Initialize Pub/Sub client
-project_id = 'strategic-reef-435523-j1'  # Replace with your Google Cloud project ID
+project_id = 'strategic-reef-435523-j2'  # Replace with your Google Cloud project ID
 topic_name = 'my-topic'  # Replace with your Pub/Sub topic name
 publisher = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path(project_id, topic_name)
